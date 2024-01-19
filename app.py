@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
@@ -15,7 +15,8 @@ def login():
         # Send request to Firebase 
         return "<p>Not yet supported<p>"
         
-    return "<p>This is where login happens</p>"
+    #return "<p>This is where login happens</p>"
+    return render_template('test.html')
 
 
 @app.route("/chat")
