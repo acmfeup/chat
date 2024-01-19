@@ -12,6 +12,7 @@ def index():
 @app.route("/login", methods=['GET', 'POST'])
 def login():
     if request.method == "POST":
+        # Send request to Firebase 
         return "<p>Not yet supported<p>"
         
     return "<p>This is where login happens</p>"
